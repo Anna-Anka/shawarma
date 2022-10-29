@@ -1,14 +1,20 @@
 /* stylelint-disable */
 
 @mixin burger {
-	$burger-width: 30px;
-	$burger-height: 30px;
-	$burger-line-height: 2px;
+	$burger-width: 55px;
+	$burger-height: 33px;
+	$burger-line-height: 5px;
+
+	@include mq(md) {
+		$burger-width: 30px;
+		$burger-height: 20px;
+		$burger-line-height: 3px;
+	}
 
 	position: relative;
 	width: $burger-width;
 	height: $burger-height;
-	color: $black;
+	color: $red-500;
 
 	&::before,
 	&::after {

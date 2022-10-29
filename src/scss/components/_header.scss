@@ -1,3 +1,122 @@
 .header {
-    
+	padding: 15px 0;
+
+	&__wrapper {
+        display: flex;
+        align-items: center;
+		//@include flex-center-sb;
+	}
+
+	&__logo {
+		margin-right: 20px;
+	}
+
+	&__vk {
+		margin-right: 20px;
+        margin-left: auto;
+        transition: filter 0.2s;
+
+        &:hover {
+            filter: invert(11%) sepia(90%) saturate(3806%) hue-rotate(348deg) brightness(113%) contrast(102%);
+        }
+
+		@include mq(md) {
+			display: none;
+		}
+	}
+
+	&__phone {
+		color: $black;
+		border-color: $black;
+
+		&:hover {
+			color: $red-500;
+			border-color: $red-500;
+		}
+
+        @include mq(xl) {
+            margin-right: 20px;
+        }
+
+        @include mq(md) {
+            font-size: 16px;
+            padding: 14px 32px;
+            margin-left: auto;
+        }
+
+		@include mq(sm) {
+			display: none;
+		}
+	}
+}
+
+.menu {
+	@include flex-center-sb;
+    margin-left: auto;
+    margin-right: 20px;
+
+	@include mq(xl) {
+		margin-left: 0;
+        margin-right: 0;
+		flex-direction: column;
+        opacity: 0;
+        top: -100%;
+        visibility: hidden;
+        transition: opacity 0.4s, top 0.4s;
+        background-color: $white;
+        z-index: 5;
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        overflow-y: scroll;
+        justify-content: flex-start;
+        padding: 50px 20px 20px;
+
+	}
+
+	&--active {
+		@include mq(xl) {
+			opacity: 1;
+            top: 0;
+            visibility: visible;
+
+		}
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-right: 25px;
+
+			@include mq(xl) {
+				margin-right: 0;
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	&__link {
+		font-weight: $fw-500;
+		line-height: 1;
+
+		&--active {
+			font-weight: $fw-700;
+		}
+	}
+}
+
+.burger {
+	order: 1;
+	display: none;
+	@include burger;
+    z-index: 10;
+
+	@include mq(xl) {
+		display: flex;
+	}
+
+    @include mq(sm) {
+		margin-left: auto;
+	}
 }

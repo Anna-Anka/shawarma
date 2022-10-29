@@ -37,6 +37,19 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	padding: 14px 52px;
+	color: white;
+	font-size: 18px;
+	line-height: 1.22;
+	background-color: $red-500;
+	border-radius: 11px;
+	transition: color 0.4s, background-color 0.4s;
+
+	&--border {
+		background-color: transparent;
+		border: 1px solid $white;
+        transition: color 0.4s, border-color 0.4s, border-color 0.4s;
+	}
 }
 
 .sr-only {
@@ -65,12 +78,19 @@ body {
 .logo {
 	display: inline-block;
 	width: 100%;
-    @include adaptiv-value("max-width", 287, 178, 1);
-    @include adaptiv-value("height", 70, 44, 1);
+	@include adaptiv-value('max-width', 287, 178, 1);
+	@include adaptiv-value('height', 70, 44, 1);
 
 	&__img {
 		width: 100%;
 		height: 100%;
 		object-fit: contain;
 	}
+}
+
+.vk {
+    &__icon {
+        width: 37px;
+        height: 22px;
+    }  
 }
