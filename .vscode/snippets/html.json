@@ -1,0 +1,144 @@
+{
+	"burger": {
+		"scope": "html",
+		"prefix": "g-burger",
+		"body": [
+			"<button class=\"burger\" aria-label=\"Открыть меню\" aria-expanded=\"false\"  data-burger>",
+			"   <span class=\"burger__line\"></span>",
+			"</button>"
+		],
+		"description": "Snippet for burger btn"
+	},
+
+	"gallery": {
+		"scope": "html",
+		"prefix": "g-gallery",
+		"body": [
+			"<ul class=\"$1__items\">",
+			"   <li class=\"$1__item\" mix category-$3>",
+			"       <a class=\"$1__link\" href=\"img/gallery/2.jpg\" data-fancybox=\"gallery\">",
+			"           <picture>",
+			"               <source srcset=\"$2.avif\" type=\"image/avif\">",
+			"               <source srcset=\"$2.webp\" type=\"image/webp\">",
+			"               <img class=\"$1__img\" src=\"$2.jpg\" width=\"$3\" height=\"$4\" alt=\"$5\" loading=\"lazy\">",
+			"           </picture>",
+			"       </a>",
+			"   </li>",
+			"</ul>"
+		]
+	},
+
+	"picture": {
+		"prefix": "g-picture",
+		"body": [
+			"<picture>",
+			"   <source srcset=\"$1.avif\" type=\"image/avif\">",
+			"   <source srcset=\"$1.webp\" type=\"image/webp\">",
+			"   <img class=\"$3__img\" src=\"img/$1.$2\" alt=\"$4\" width=\"$5\" height=\"$6\" loading=\"lazy\">",
+			"</picture>"
+		]
+	},
+
+	"tabs html sctructure": {
+		"prefix": "g-tabs",
+		"body": [
+			"<div class=\"tabs\" data-tabs=\"$1\">",
+			"   <ul class=\"tabs__nav\">",
+			"       <li class=\"tabs__nav-item\"><a class=\"tabs__nav-btn\" href=\"#\">$2</a></li>",
+			"   </ul>",
+			"   <div class=\"tabs__content\">",
+			"       <div class=\"tabs__panel\">$5</div>",
+			"       <div class=\"tabs__panel\">$6</div>",
+			"       <div class=\"tabs__panel\">$7</div>",
+			"   </div>",
+			"</div>"
+		],
+		"description": "Snippet for basic tabs structure"
+	},
+
+	"stepper": {
+		"prefix": "g-stepper",
+		"body": [
+			"<div class=\"stepper\">",
+			"    <label class=\"stepper__field\">",
+			"        <input class=\"stepper__input\" type=\"number\" value=\"1\" name=\"count\" min=\"1\">",
+			"        <span class=\"stepper__text\">шт</span>",
+			"    </label>",
+			"    <div class=\"stepper__btns\">",
+			"        <button class=\"stepper__btn stepper__btn--up\" type=\"button\">",
+			"            <span class=\"sr-only\">Увеличить количество</span>",
+			"            +",
+			"        </button>",
+			"        <button class=\"stepper__btn stepper__btn--down stepper__btn--disabled\" type=\"button\">",
+			"            <span class=\"sr-only\">Уменьшить количество</span>",
+			"            -",
+			"        </button>",
+			"    </div>",
+			"</div>"
+		]
+	},
+
+	"accordion": {
+		"prefix": "g-accordion",
+		"body": [
+			"<ul class=\"accordion\">",
+			"    <li class=\"accordion__item\">",
+			"        <button class=\"accordion__control\" aria-expanded=\"false\">",
+			"            Accordion",
+			"        </button>",
+			"        <div class=\"accordion__content\" aria-hidden=\"true\">",
+			"            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, harum!</p>",
+			"        </div>",
+			"    </li>",
+			"</ul>"
+		]
+	},
+
+	"graph modal Btn": {
+		"prefix": "g-graph-btn",
+		"body": ["<button class=\"$1\" data-graph-path=\"$2\">$3</button>"],
+		"description": "Snippet for graph-modal btn"
+	},
+
+	"graph modal Structure": {
+		"prefix": "g-graph-modal",
+		"body": [
+			"<div class=\"graph-modal\">",
+			"   <div class=\"graph-modal__container\" role=\"dialog\" aria-modal=\"true\" data-graph-target=\"$1\">",
+			"       <div class=\"graph-modal__box\">",
+			"           <button class=\"btn-reset js-modal-close graph-modal__close\" aria-label=\"Закрыть модальное окно\"></button>",
+			"           <div class=\"graph-modal__content\">$2</div>",
+			"       </div>",
+			"   </div>",
+			"</div>"
+		],
+		"description": "Snippet for graph-modal basic structure"
+	},
+
+	"FsLightbox": {
+		"prefix": "g-lightbox",
+		"body": [
+			"<a class=\"$1\" data-fslightbox=\"$2\" href=\"img/$3.$4\">",
+            "   <picture>",
+			"       <source srcset=\"img/$3.avif\" type=\"image/avif\">",
+			"       <source srcset=\"img/$3.webp\" type=\"image/webp\">",
+			"       <img class=\"$5__img\" src=\"img/$3.$4\" alt=\"$6\" width=\"$7\" height=\"$8\" loading=\"lazy\">",
+			"   </picture>",
+            "</a>"
+		]
+	},
+
+    "marquee": {
+		"prefix": "g-marquee",
+		"body": [
+			"<div class=\"marquee\">",
+            "    <div class=\"marquee__wrapper\">",
+            "        <ul class=\"marquee__items\">",
+            "            <li class=\"marquee__item\">$1</li>",
+            "        </ul>",
+            "    </div>",
+            "</div>"
+		]
+	}
+}
+

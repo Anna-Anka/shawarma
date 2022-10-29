@@ -1,0 +1,76 @@
+body {
+	color: $black;
+	font-weight: $fw-400;
+	font-size: 16px;
+	font-family: $manrope, Arial, sans-serif;
+	line-height: 1.5;
+	background-color: $white;
+}
+
+.container {
+	width: 100%;
+	max-width: 1240px;
+	margin: 0 auto;
+	padding: 0 20px;
+
+	&--large {
+		max-width: 1600px;
+	}
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+.main {
+	flex: 1 1 auto;
+}
+
+.lock {
+	overflow: hidden;
+}
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: 1px;
+	padding: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	border: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(100%);
+}
+
+.disable-scroll {
+	position: relative;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.logo {
+	display: inline-block;
+	width: 100%;
+    @include adaptiv-value("max-width", 287, 178, 1);
+    @include adaptiv-value("height", 70, 44, 1);
+
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+}

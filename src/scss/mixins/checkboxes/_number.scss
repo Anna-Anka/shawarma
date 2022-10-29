@@ -1,0 +1,14 @@
+/* stylelint-disable */
+
+@mixin number {
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        margin: 0;
+        -webkit-appearance: none;
+    }
+
+    &[type=number] {
+        -moz-appearance: textfield;
+    }
+}

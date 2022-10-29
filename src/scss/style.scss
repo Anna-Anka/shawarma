@@ -1,0 +1,21 @@
+/* stylelint-disable */
+
+// * standart
+@import 'fonts';
+@import 'vars';
+@import 'reset';
+@import 'mixins';
+@import 'libs';
+@import 'global';
+
+// * components
+@import './components/header';
+@import './components/footer';
+
+// * templates
+//@import './templates/stepper';
+//@import './templates/accordion';
+//@import './templates/modal';
+//@import './templates/marquee';
+
+// * home-page

@@ -1,0 +1,66 @@
+/* stylelint-disable */
+
+@mixin bg-cover {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@mixin bg-conatin {
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+@mixin flex-all-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin flex-center-sb {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@mixin flex-v-center {
+	display: flex;
+	align-items: center;
+}
+
+@mixin flex-v-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@mixin flex-v-sb {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+@mixin image-set($pathToImage) {
+  background-image: url("#{$pathToImage}.jpg");
+  /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
+  background-image: image-set(
+    /* stylelint-disable-next-line function-comma-newline-after */
+    "#{$pathToImage}.avif"type("image/avif"),
+    "#{$pathToImage}.webp"type("image/webp"),
+    "#{$pathToImage}.jpg"type("image/jpg")
+  );
+}
+
+@mixin blackout {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: $black;
+    transition: opacity 0.3s;
+}
+
+
+
