@@ -2,9 +2,8 @@
 	padding: 15px 0;
 
 	&__wrapper {
-        display: flex;
-        align-items: center;
-		//@include flex-center-sb;
+		display: flex;
+		align-items: center;
 	}
 
 	&__logo {
@@ -13,12 +12,15 @@
 
 	&__vk {
 		margin-right: 20px;
-        margin-left: auto;
-        transition: filter 0.2s;
+		margin-left: auto;
+		transition: filter 0.2s;
 
-        &:hover {
-            filter: invert(11%) sepia(90%) saturate(3806%) hue-rotate(348deg) brightness(113%) contrast(102%);
-        }
+		&:hover {
+			.vk__icon {
+                filter: invert(11%) sepia(90%) saturate(3806%) hue-rotate(348deg)
+				brightness(113%) contrast(102%);
+            }
+		}
 
 		@include mq(md) {
 			display: none;
@@ -34,15 +36,15 @@
 			border-color: $red-500;
 		}
 
-        @include mq(xl) {
-            margin-right: 20px;
-        }
+		@include mq(xl) {
+			margin-right: 20px;
+		}
 
-        @include mq(md) {
-            font-size: 16px;
-            padding: 14px 32px;
-            margin-left: auto;
-        }
+		@include mq(md) {
+			margin-left: auto;
+			padding: 14px 32px;
+			font-size: 16px;
+		}
 
 		@include mq(sm) {
 			display: none;
@@ -52,36 +54,34 @@
 
 .menu {
 	@include flex-center-sb;
-    margin-left: auto;
-    margin-right: 20px;
+	margin-right: 20px;
+	margin-left: auto;
 
 	@include mq(xl) {
-		margin-left: 0;
-        margin-right: 0;
+		position: absolute;
+		top: -100%;
+		right: 0;
+		left: 0;
+		z-index: 5;
 		flex-direction: column;
-        opacity: 0;
-        top: -100%;
-        visibility: hidden;
-        transition: opacity 0.4s, top 0.4s;
-        background-color: $white;
-        z-index: 5;
-        position: absolute;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 100vh;
-        overflow-y: scroll;
-        justify-content: flex-start;
-        padding: 50px 20px 20px;
-
+		justify-content: flex-start;
+		width: 100%;
+		height: 100vh;
+		margin-right: 0;
+		margin-left: 0;
+		padding: 50px 20px 20px;
+		overflow-y: scroll;
+		background-color: $white;
+		visibility: hidden;
+		opacity: 0;
+		transition: opacity 0.4s, top 0.4s;
 	}
 
 	&--active {
 		@include mq(xl) {
+			top: 0;
+			visibility: visible;
 			opacity: 1;
-            top: 0;
-            visibility: visible;
-
 		}
 	}
 
@@ -99,24 +99,25 @@
 	&__link {
 		font-weight: $fw-500;
 		line-height: 1;
+        transition: color 0.4s;
 
-		&--active {
-			font-weight: $fw-700;
-		}
+        &:hover {
+            color: $red-500;
+        }
 	}
 }
 
 .burger {
-	order: 1;
+	z-index: 10;
 	display: none;
+	order: 1;
 	@include burger;
-    z-index: 10;
 
 	@include mq(xl) {
 		display: flex;
 	}
 
-    @include mq(sm) {
+	@include mq(sm) {
 		margin-left: auto;
 	}
 }
