@@ -1,0 +1,29 @@
+.offers {
+	@include adaptiv-value('padding-top', 160, 80, 1);
+	@include adaptiv-value('padding-bottom', 160, 80, 1);
+
+	&__items {
+		display: flex;
+
+		@include mq(lg) {
+			flex-direction: column;
+		}
+	}
+
+	&__item {
+		width: 49%;
+
+		&:not(:last-child) {
+			margin-right: 20px;
+
+			@include mq(lg) {
+				margin-bottom: 20px;
+                margin-right: 0;
+			}
+		}
+
+		@include mq(lg) {
+			width: 100%;
+		}
+	}
+}

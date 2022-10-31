@@ -1,0 +1,25 @@
+<section class="offers section">
+    <div class="container container--large">
+        <h2 class="sr-only">
+            Предложения
+        </h2>
+        <ul class="offers__items">
+            <li class="offers__item">
+                @include('./../components/cards/_offer-card.html', {
+                    'bg' : 'vacancy',
+                    'title' : 'Вакансии',
+                    'text' : 'Если вы хотите стать нашим сотрудником, ознакомьтесь с имеющимися на данный момент вакансиями.',
+                    'link' : 'Все вакансии'
+                })
+            </li>
+            <li class="offers__item">
+                @include('./../components/cards/_offer-card.html', {
+                'bg' : 'franchise',
+                'title' : 'Франшиза',
+                'text' : 'Если вы собираетесь открыть кафе под брендом «Шахерезада», ознакомьтесь с условиями франчайзинга.',
+                'link' : 'Подробнее'
+                })
+            </li>
+        </ul>
+    </div>
+</section>

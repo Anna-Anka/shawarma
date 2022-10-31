@@ -7,9 +7,9 @@
 		display: flex;
 		height: 600px;
 
-        @include mq(md) {
-            height: 520px;
-        }
+		@include mq(md) {
+			height: 520px;
+		}
 	}
 
 	&__swiper {
@@ -95,34 +95,34 @@
 		}
 	}
 
-    &__button {
-        @include adaptiv-value("width", 50, 33, 1);
-        @include adaptiv-value("height", 50, 33, 1);
-        background-color: $white;
-        border-radius: 50%;
+	&__button {
+		@include adaptiv-value('width', 50, 33, 1);
+		@include adaptiv-value('height', 50, 33, 1);
+		background-color: $white;
+		border-radius: 50%;
 
-        &::after {
-            color: $black;
-            @include adaptiv-value("font-size", 30, 20, 1);
-            font-weight: $fw-500;
-        }
+		&::after {
+			color: $black;
+			@include adaptiv-value('font-size', 30, 20, 1);
+			font-weight: $fw-500;
+		}
 
-        @include mq(md) {
-            top: 33%;
-        }
+		@include mq(md) {
+			top: 33%;
+		}
+	}
 
-    }
+	.swiper-button-disabled {
+		opacity: 1;
+	}
 
-    .swiper-button-disabled {
-        opacity: 1;
-    }
- 
 	&__discount {
 		position: relative;
 		width: 100%;
 		max-width: 567px;
 		height: inherit;
 		padding: 50px 44px;
+		overflow: hidden;
 		background-color: $red-500;
 		border-radius: 37px;
 
@@ -162,7 +162,7 @@
 
 	&__bg {
 		position: absolute;
-		top: 0;
+		top: 10px;
 		right: 0;
 		width: 54%;
 		height: 100%;
