@@ -1,6 +1,7 @@
 .about {
 	@include adaptiv-value('padding-top', 150, 50, 1);
 	@include adaptiv-value('padding-bottom', 150, 50, 1);
+    @include adaptiv-value("margin-bottom", 80, 40, 1);
 	display: flex;
 	background-color: $yellow-400;
     height: 700px;

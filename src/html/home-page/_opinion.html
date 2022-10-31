@@ -1,0 +1,38 @@
+<section class="opinion section">
+    <div class="opinion__bg">
+        <div class="opinion__img" style="background-image: url('img/opinion-bg.png')"></div>
+    </div>
+    <div class="opinion__wrapper">
+        <div class="opinion__container container">
+            <div class="opinion__inner">
+                <h2 class="opinion__title title">
+                    Нам важно ваше мнение!
+                </h2>
+                <form class="opinion__form form" action="#">
+                    <div class="opinion__items">
+                        <div class="opinion__item">
+                            <label class="sr-only" for="name">Введите ваше имя</label>
+                            <input class="form__field" name="name" type="text" placeholder="Имя" id="name" required>
+                        </div>
+                        <div class="opinion__item">
+                            <label class="sr-only" for="tel">Введите ваше телефон</label>
+                            <input class="form__field" name="tel" type="tel" placeholder="Телефон" id="tel" required>
+                        </div>
+                    </div>
+                    <div class="opinion__item opinion__item--message">
+                        <label class="sr-only" for="message">Введите ваше сообщение</label>
+                        <textarea class="form__field form__field--message" name="message" id="message" placeholder="Сообщение"></textarea>
+                    </div>
+                    <div class="form__agree">
+                        <div class="form__text">
+                            <label for="agree">Нажимая кнопку «отправить», вы подтверждаете, что ознакомлены и согласны с</label>
+                            <a class="form__link" href="#">Правилами обработки персональных данных</a>
+                        </div>
+                        <input class="form__check" name="agree" type="checkbox" id="agree" required>
+                    </div>
+                    <button class="form__button button" type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

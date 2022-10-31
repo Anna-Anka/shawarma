@@ -4,6 +4,7 @@ export const bannersSwiper = () => {
             slidesPerView: 1,
             slidesPerGroup: 1,
             spaceBetween: 10,
+            loop: true,
 
             navigation: {
                 nextEl: '.banners__button--next',

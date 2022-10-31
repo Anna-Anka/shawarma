@@ -96,16 +96,7 @@
 	}
 
 	&__button {
-		@include adaptiv-value('width', 50, 33, 1);
-		@include adaptiv-value('height', 50, 33, 1);
-		background-color: $white;
-		border-radius: 50%;
-
-		&::after {
-			color: $black;
-			@include adaptiv-value('font-size', 30, 20, 1);
-			font-weight: $fw-500;
-		}
+		@include swiper-button;
 
 		@include mq(md) {
 			top: 33%;

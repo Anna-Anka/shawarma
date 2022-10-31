@@ -1,6 +1,6 @@
 .offers {
-	@include adaptiv-value('padding-top', 160, 80, 1);
-	@include adaptiv-value('padding-bottom', 160, 80, 1);
+	@include adaptiv-value("padding-top", 80, 40, 1);
+    @include adaptiv-value("padding-bottom", 80, 40, 1);
 
 	&__items {
 		display: flex;
