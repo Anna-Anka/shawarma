@@ -1,11 +1,14 @@
 @include('./components/links/_head.html',
-{ 'title' : 'Шаверма Шахерезада | Главная страница' }
+{ 'title' : 'Шаверма Шахерезада — сеть семейных ресторанов быстрого питания | Главная страница' }
 )
 
 @include('./components/_header.html')
 
 <main class="main">
-
+    <h1 class="sr-only">
+        Шаверма Шахерезада — сеть семейных ресторанов быстрого питания
+    </h1>
+    @include('./home-page/_banners.html')
 </main>
 
 @include('./components/_footer.html')

@@ -2,7 +2,7 @@
 //import '../../node_modules/jquery/dist/jquery'
 
 // * Swiper
-//import '../../node_modules/swiper/swiper-bundle.min.js'
+import '../../node_modules/swiper/swiper-bundle.min.js'
 
 // * inputmask
 //import '../../node_modules/maskedinput/dist/min/jquery.inputmask.bundle.min.js'
