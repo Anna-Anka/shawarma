@@ -1,10 +1,13 @@
 .about {
 	@include adaptiv-value('padding-top', 150, 50, 1);
 	@include adaptiv-value('padding-bottom', 150, 50, 1);
-    @include adaptiv-value("margin-bottom", 80, 40, 1);
+	@include adaptiv-value('margin-bottom', 80, 40, 1);
 	display: flex;
 	background-color: $yellow-400;
-    height: 700px;
+
+	@include mq(lg) {
+		flex-direction: column-reverse;
+	}
 
 	&__wrapper {
 		flex: 0 0 100%;
@@ -19,9 +22,15 @@
 		background-size: cover;
 		transform: translateX(0);
 
-        @include mq(lg) {
-            display: none;
-        }
+		@include mq(lg) {
+            max-width: 45%;
+            padding-bottom: 39%;
+		}
+
+        @include mq(sm) {
+            max-width: 63%;
+            padding-bottom: 55%;
+		}
 	}
 
 	&__img {
@@ -33,22 +42,23 @@
 		@include bg-cover;
 	}
 
-    &__inner {
-        width: 50%;
+	&__inner {
+		width: 50%;
 
-        @include mq(xl) {
-            width: 68%;
-        }
+		@include mq(xl) {
+			width: 68%;
+		}
 
-        @include mq(lg) {
-            width: 100%;
-        }
-    }
+		@include mq(lg) {
+			width: 100%;
+            margin-bottom: 20px;
+		}
+	}
 
 	&__title {
 		margin-bottom: 30px;
 		font-weight: $fw-500;
-        @include adaptiv-value("font-size", 30, 22, 1);
+		@include adaptiv-value('font-size', 30, 22, 1);
 	}
 
 	&__accent {
@@ -66,7 +76,7 @@
 		justify-content: flex-start;
 		max-width: fit-content;
 		padding: 10px 89px 10px 15px;
-        @include adaptiv-value('font-size', 16, 14, 1);
+		@include adaptiv-value('font-size', 16, 14, 1);
 
 		&::before {
 			position: absolute;
