@@ -30,6 +30,12 @@
 	align-items: center;
 }
 
+@mixin flex-v-center-h {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
 @mixin flex-v-sb {
 	display: flex;
 	flex-direction: column;
