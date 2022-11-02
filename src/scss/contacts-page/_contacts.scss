@@ -6,6 +6,7 @@
 	background-color: $red-500;
 	border-top-right-radius: 37px;
 	border-bottom-right-radius: 37px;
+    @include adaptiv-value("margin-bottom", 80, 40, 1);
 
 	@include mq(lg) {
 		flex-direction: column;

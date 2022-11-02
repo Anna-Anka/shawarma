@@ -5,12 +5,14 @@
 @include('./components/_header.html')
 
 <main class="main">
+
     <h1 class="sr-only">
         Контакты и адреса
     </h1>
+
     @include('./contacts-page/_contacts.html')
 
-    <!-- @include('./home-page/_address.html') -->
+    @include('./contacts-page/_address.html')
 </main>
 
 @include('./components/_footer.html')
