@@ -17,7 +17,7 @@
 
 // * templates
 //@import './templates/stepper';
-//@import './templates/accordion';
+@import './templates/accordion';
 //@import './templates/modal';
 //@import './templates/marquee';
 
@@ -35,3 +35,6 @@
 
 // * requisites-page
 @import './requisites-page/requisites';
+
+// * vacancies-page
+@import './vacancies-page/vacancies';

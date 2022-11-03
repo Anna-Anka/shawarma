@@ -6,8 +6,8 @@
 //stepperFunction()
 
 // * accordion 
-//import { accordionFunction } from "./templates/accordion";
-//accordionFunction();
+import { accordionFunction } from "./templates/accordion";
+accordionFunction();
 
 // * Определение операционной системы на мобильных
 // import { mobileCheck } from "./functions/mobile-check";
