@@ -1,0 +1,71 @@
+<section class="products">
+    <div class="container">
+        <h2 class="sr-only">Шаверма в лаваше</h2>
+        <span class="products__title" aria-hidden="true">Шаверма в лаваше</span>
+
+        <ul class="products__items">
+            <li class="products__item">
+                @include('./../components/cards/_product-card.html', {
+                    'img' : '1',
+                    'alt' : 'Столичная',
+                    'title' : 'Столичная <span class="product-card__subtitle">(стандарт/MAXI)</span>',
+                    'size' : '209/309',
+                    'subtext' : '(с капустой, морковью и двумя соусами)',
+                })
+            </li>
+            <li class="products__item">
+                @include('./../components/cards/_product-card.html', {
+                'img' : '2',
+                'alt' : 'Шах-ролл',
+                'title' : 'Шах-ролл',
+                'size' : '219/319',
+                'subtext' : '(классическая в лаваше)',
+                })
+            </li>
+            <li class="products__item">
+                @include('./../components/cards/_product-card.html', {
+                'img' : '3',
+                'alt' : 'Сырная',
+                'title' : 'Сырная',
+                'size' : '259/359',
+                'subtext' : '(в сырном лаваше и сырным соусом)',
+                })
+            </li>
+            <li class="products__item">
+                @include('./../components/cards/_product-card.html', {
+                'img' : '4',
+                'alt' : 'По мексикански',
+                'title' : 'По мексикански',
+                'size' : '259/359',
+                'subtext' : '(с острым перцем и соусом «Сальса»)',
+                })
+            </li>
+            <li class="products__item">
+                @include('./../components/cards/_product-card.html', {
+                'img' : '5',
+                'alt' : 'По-арабски',
+                'title' : 'По-арабски',
+                'size' : '259/359',
+                'subtext' : '(с маринованными огурчиками и картофелем)',
+                })
+            </li>
+            <li class="products__item">
+                @include('./../components/cards/_product-card.html', {
+                'img' : '6',
+                'alt' : 'Цезарь',
+                'title' : 'Цезарь',
+                'size' : '259/359',
+                'subtext' : '(с сыром чеддер и соусом «Цезарь»)',
+                })
+            </li>
+            <li class="products__item">
+                @include('./../components/cards/_product-card.html', {
+                'img' : '1',
+                'alt' : 'Цезарь',
+                'title' : 'Классическая <span class="product-card__subtitle">(лайт/стандарт/MAXI)</span>',
+                'size' : '129/199/279'
+                })
+            </li>
+        </ul>
+    </div>
+</section>

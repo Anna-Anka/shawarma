@@ -10,10 +10,13 @@
 
 // * components
 @import './components/header';
+@import './components/form';
 @import './components/footer';
 
 // * cards
 @import './components/cards/offer-card';
+@import './components/cards/dish-card';
+@import './components/cards/product-card';
 
 // * templates
 //@import './templates/stepper';
@@ -24,6 +27,10 @@
 // * home-page
 @import './home-page/banners';
 @import './home-page/about';
+
+// * dishes
+@import './home-page/dishes/_trk.scss';
+
 @import './home-page/offers';
 @import './home-page/gallery';
 @import './home-page/opinion';
@@ -41,3 +48,8 @@
 
 // * loyalty-page
 @import './loyalty-page/loyalty';
+
+// * catalog-page
+@import './catalog-page/banner';
+@import './catalog-page/navigation';
+@import './catalog-page/products';

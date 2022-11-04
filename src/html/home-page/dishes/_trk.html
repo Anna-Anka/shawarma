@@ -1,0 +1,58 @@
+<section class="dishes section">
+    <div class="container">
+        <h2 class="dishes__title title">
+            Меню
+            <span class="dishes__accent">Шахерезада в ТРК</span>
+        </h2>
+        <ul class="dishes__items">
+            <li class="dishes__item">
+                @include('./../../components/cards/_dish-card.html', {
+                    'img' : 'shawarma',
+                    'link' : 'Шаурма',
+                })
+            </li>
+            <li class="dishes__item">
+                @include('./../../components/cards/_dish-card.html', {
+                'img' : 'falafel',
+                'link' : 'Фалафель',
+                })
+            </li>
+            <li class="dishes__item">
+                @include('./../../components/cards/_dish-card.html', {
+                'img' : 'homemade',
+                'link' : 'Домашняя еда',
+                })
+            </li>
+            <li class="dishes__item">
+                @include('./../../components/cards/_dish-card.html', {
+                'img' : 'shah-grill',
+                'link' : 'Шах-гриль',
+                })
+            </li>
+            <li class="dishes__item">
+                @include('./../../components/cards/_dish-card.html', {
+                'img' : 'dinners',
+                'link' : 'Обеды',
+                })
+            </li>
+            <li class="dishes__item">
+                @include('./../../components/cards/_dish-card.html', {
+                'img' : 'drinks',
+                'link' : 'Напитки',
+                })
+            </li>
+            <li class="dishes__item">
+                @include('./../../components/cards/_dish-card.html', {
+                'img' : 'snacks',
+                'link' : 'Снеки',
+                })
+            </li>
+            <li class="dishes__item">
+                @include('./../../components/cards/_dish-card.html', {
+                'img' : 'homemade-2',
+                'link' : 'Домашняя еда',
+                })
+            </li>
+        </ul>
+    </div>
+</section>

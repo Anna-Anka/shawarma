@@ -1,0 +1,43 @@
+.product-card {
+    line-height: 1.1;
+    font-weight: $fw-500;
+
+    &__img {
+        height: 300px;
+        margin-bottom: 15px;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 6px;
+        font-size: 20px;
+    }
+
+    &__title {
+        margin-right: 10px;
+        letter-spacing: -0.01em;
+        font-weight: $fw-700;
+    }
+
+    &__subtitle {
+        font-weight: $fw-500;
+    }
+
+    &__size {
+        letter-spacing: -0.03em;
+    }
+
+    &__subtext {
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+    &__link {
+        color: $black;
+        border-color: $black;
+        margin-top: 16px;
+    }
+}

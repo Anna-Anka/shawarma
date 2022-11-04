@@ -1,0 +1,17 @@
+@include('./components/links/_head.html',
+{ 'title' : 'Шаверма Шахерезада — сеть семейных ресторанов быстрого питания | Каталог' }
+)
+
+@include('./components/_header.html')
+
+<main class="main">
+    @include('./catalog-page/_banner.html')
+
+    @include('./catalog-page/_navigation.html')
+
+    @include('./catalog-page/_products.html')
+</main>
+
+@include('./components/_footer.html')
+
+@include('./components/links/_bottom.html')
