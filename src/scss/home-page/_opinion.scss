@@ -77,39 +77,3 @@
 		}
 	}
 }
-
-.form {
-	&__field {
-		width: 100%;
-		padding: 15px 18px;
-		border: 1px solid $black;
-		border-radius: 15px;
-
-		&::placeholder {
-			color: $black;
-		}
-
-		&--message {
-			width: 100%;
-			max-width: 100%;
-			min-height: 175px;
-		}
-	}
-
-	&__agree {
-		display: flex;
-		flex-direction: row-reverse;
-		justify-content: start;
-		font-size: 12px;
-		line-height: 1.2;
-		@include adaptiv-value('margin-bottom', 30, 20, 1);
-	}
-
-	&__check {
-		width: 13px;
-		height: 13px;
-		margin-right: 10px;
-		border: 1px solid $black;
-		border-radius: 0;
-	}
-}
