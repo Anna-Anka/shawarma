@@ -55,9 +55,9 @@
 		margin-bottom: 7px;
 		column-count: 2;
 
-        @include mq(sm) {
-            column-count: 1;
-        }
+		@include mq(sm) {
+			column-count: 1;
+		}
 	}
 
 	&__item {
@@ -78,6 +78,18 @@
 
 			&--number {
 				@include number;
+			}
+		}
+
+		&__agree {
+			.form__visible {
+				&--agree {
+					border-color: $white;
+
+                    &::before {
+                        background-color: $white;
+                    }
+				}
 			}
 		}
 

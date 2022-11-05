@@ -47,13 +47,14 @@
                                 
                             </label>
                         </fieldset>
-                        <div class="form__agree">
-                            <div class="form__text">
-                                <label for="agree">Нажимая кнопку «отправить», вы подтверждаете, что ознакомлены и согласны с</label>
+                        <label class="form__agree">
+                            <p>
+                                Нажимая кнопку «отправить», вы подтверждаете, что ознакомлены и согласны с
                                 <a class="form__link" href="#">Правилами обработки персональных данных</a>
-                            </div>
-                            <input class="form__check" name="agree" type="checkbox" id="agree" required>
-                        </div>
+                            </p>
+                            <input class="form__hidden" name="agree" type="checkbox" required>
+                            <span class="form__visible form__visible--agree"></span>
+                        </label>
                         <button class="form__button button" type="submit">Отправить</button>
                     </form>
                 </div>

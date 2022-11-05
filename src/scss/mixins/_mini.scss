@@ -47,11 +47,21 @@
 	@include adaptiv-value('height', 50, 33, 1);
 	background-color: $white;
 	border-radius: 50%;
+	transition: background-color 0.4s;
 
 	&::after {
 		color: $black;
 		@include adaptiv-value('font-size', 30, 20, 1);
 		font-weight: $fw-500;
+		transition: color 0.4s;
+	}
+
+	&:hover {
+		background-color: $red-500;
+
+		&::after {
+			color: $white;
+		}
 	}
 }
 
