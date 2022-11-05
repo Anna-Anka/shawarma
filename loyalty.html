@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script defer src="js/main.js"></script>
+
+  <title>Шаверма Шахерезада — сеть семейных ресторанов быстрого питания | Вакансии</title>
+</head>
+
+<body class="body">
+  <div class="wrapper">
+
+<header class="header">
+    <div class="container container--large">
+        <nav class="header__wrapper">
+            <a class="header__logo logo" href="#">
+               <img class="logo__img" href="#" src="img/logo.svg" alt="логотип" width="287" height="70" loading="lazy">
+            </a>
+            <button class="burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+               <span class="burger__line"></span>
+            </button>
+            <ul class="menu" data-menu>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">О нас</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Меню</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Адреса</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Акции</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Доставка</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Контакты</a>
+                </li>
+            </ul>
+            <a class="header__vk vk" href="#">
+                <span class="sr-only">Вк</span>
+                <svg class="vk__icon" aria-hidden="true">
+                   <use xlink:href="img/sprite.svg#vk">
+                </svg>
+            </a>
+            <a class="header__phone button button--border" href="tel:+79650949640">
+                +7 981 242-21-37
+            </a>
+        </nav>
+    </div>
+</header>
+
+<main class="main">
+  <section class="loyalty">
+    <div class="container container--large">
+        <div class="loyalty__wrapper">
+            <div class="container">
+                <div class="loyalty__content">
+                    <h1 class="loyalty__title title">
+                        Оформление системы лояльности
+                    </h1>
+                    <form class="loyalty__form form" action="#">
+                        <fieldset class="loyalty__items">
+                            <div class="loyalty__item">
+                                <label class="sr-only" for="surname">Введите вашу фамилию</label>
+                                <input class="form__field" name="surname" type="text" placeholder="Фамилия" id="surname" required>
+                            </div>
+                            <div class="loyalty__item">
+                                <label class="sr-only" for="name">Введите ваше имя</label>
+                                <input class="form__field" name="name" type="text" placeholder="Имя" id="name" required>
+                            </div>
+                            <div class="loyalty__item">
+                                <label class="sr-only" for="midle-name">Введите ваше отчество</label>
+                                <input class="form__field" name="midle-name" type="text" placeholder="Отчество" id="midle-name" required>
+                            </div>
+                            <div class="loyalty__item">
+                                <label class="sr-only" for="tel">Введите ваш телефон</label>
+                                <input class="form__field" name="tel" type="tel" placeholder="Телефон" id="tel" required>
+                            </div>
+                            <div class="loyalty__item">
+                                <label class="sr-only" for="emial">Введите ваш E-Mail</label>
+                                <input class="form__field" name="emial" type="emial" placeholder="E-Mail" id="emial" required>
+                            </div>
+                            <div class="loyalty__item">
+                                <label class="sr-only" for="birthday">Введите ваш день месяц и год рождения</label>
+                                <input class="form__field form__field--number" name="birthday" type="number" placeholder="ДД.ММ.ГГ" id="birthday" required>
+                            </div>
+                        </fieldset>
+                        <fieldset class="loyalty__custom">
+                            <label class="loyalty__radio">
+                                Мужчина
+                                <input class="form__hidden" name="gender" type="radio" value="gender-man">
+                                <span class="form__visible"></span>
+
+                            </label>
+                            <label class="loyalty__radio">
+                                Женщина
+                                <input class="form__hidden" name="gender" type="radio" value="gender-woman">
+                                <span class="form__visible"></span>
+
+                            </label>
+                        </fieldset>
+                        <label class="form__agree">
+                            <p>
+                                Нажимая кнопку «отправить», вы подтверждаете, что ознакомлены и согласны с
+                                <a class="form__link" href="#">Правилами обработки персональных данных</a>
+                            </p>
+                            <input class="form__hidden" name="agree" type="checkbox" required>
+                            <span class="form__visible form__visible--agree"></span>
+                        </label>
+                        <button class="form__button button" type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+            <div class="loyalty__bg" style="background-image: url('img/loyalty-bg.png');"> </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__wrapper">
+            <div class="footer__top">
+                <div class="footer__company">
+                    <a class="footer__logo logo" href="#">
+                        <img class="logo__img" href="#" src="img/logo.svg" alt="логотип" width="287" height="70" loading="lazy">
+                    </a>
+                    <div class="footer__rights">
+                        <span>© Все права защищены</span>
+                        <span>Санкт-Петербург</span>
+                    </div>
+                </div>
+                <div class="footer__navigation">
+                    <span class="footer__subtitle">меню</span>
+                    <ul class="footer__items">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Вакансии</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">О компании</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Контакты</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Франчайзинг</a>
+                        </li>
+                    </ul>
+                    <span class="footer__subtitle footer__subtitle--small">
+                        ооо «шахерезада»
+                    </span>
+                </div>
+                <div class="footer__contacts">
+                    <span class="footer__subtitle">Контакты</span>
+                    <a class="footer__vk vk" href="#">
+                        <span class="sr-only">Вк</span>
+                        <svg class="vk__icon" aria-hidden="true">
+                            <use xlink:href="img/sprite.svg#vk">
+                        </svg>
+                    </a>
+                    <ul class="footer__list">
+                        <li class="footer__contact">
+                            <a class="footer__phone" href="tel:+79812422137">
+                                +7 981 242-21-37
+                            </a>
+                            <span class="footer__subtext">
+                                по вопросам трудоустройства
+                            </span>
+                        </li>
+                        <li class="footer__contact">
+                            <a class="footer__phone" href="tel:+79650949640">
+                                +7 965 094-96-40
+                            </a>
+                            <span class="footer__subtext">
+                                по вопросам контроля качества обслуживания
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__rights footer__rights--mobile">
+                <span>© Все права защищены</span>
+                <span>Санкт-Петербург</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</div>
+</body>
+
+</html>
