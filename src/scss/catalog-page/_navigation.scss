@@ -3,6 +3,7 @@
 
 	&__items {
 		display: flex;
+        flex-wrap: wrap;
 	}
 
 	&__item {
@@ -11,6 +12,7 @@
 	}
 
 	&__link {
+        display: block;
 		padding: 16px 30px;
 		color: $white;
 		line-height: 1.1;
